@@ -1,0 +1,21 @@
+BOXZY social icon sources — 2026-09-30
+All source files preserved without recoloring or reshaping.
+
+whatnot.svg: Official Whatnot Asset Library > Whatnot - Symbol - Yellow (SVG, 386×386). Downloaded original through brand library UI.
+https://brand.whatnot.com/d/tEiVD2nfDpsk/logos
+
+instagram.webp: Official Instagram homepage icon. Public rel=icon resource served by Instagram CDN.
+https://www.instagram.com/
+https://static.cdninstagram.com/rsrc.php/yr/r/rzWiSjZRxk5.webp
+Brand resources: https://www.meta.com/brand/resources/instagram/instagram-brand/
+
+facebook.ico: Official Facebook homepage icon. Public default shortcut icon, multiresolution ICO from Facebook CDN.
+https://www.facebook.com/
+https://static.xx.fbcdn.net/rsrc.php/y1/r/ay1hV6OlegS.ico
+Brand resources: https://www.meta.com/brand/resources/facebook/logo/
+
+youtube.png: Original YouTube_Icon/Digital/01 Red/yt_icon_red_digital.png from official core icon ZIP. Source includes transparent clear space, accounted for in CSS.
+https://brand.youtube/youtube-icon/
+https://www.gstatic.com/marketing-cms/78/29/3e68a1414bb28d0b7e47b44c3c91/youtube-icon.zip
+
+Labels: Whatnot @kenchitotcg, Instagram @boxzy.io, Facebook page display name Boxzy.io (not a verified handle), YouTube @boxzy_io. Whatnot handle was confirmed by the user screenshot. Profile destinations are supplied by the user. Metrics and ratings are intentionally not displayed. Source brand assets are separate from generated design previews.

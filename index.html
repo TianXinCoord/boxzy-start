@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+ <meta name="theme-color" content="#030303"><meta name="description" content="Discover authentic Pokémon collectibles. Be first to know when BOXZY launches in late October.">
+ <title>BOXZY — What will you unbox?</title>
+ <link rel="preload" href="assets/anton.ttf" as="font" type="font/ttf" crossorigin>
+ <link rel="preload" href="assets/hd/hero-plate-2x.webp" as="image">
+ <link rel="stylesheet" href="style.css">
+ <script src="social-config.js" defer></script><script src="social.js" defer></script><script src="prizes.js" defer></script><script src="app.js" defer></script><script src="signup-config.js" defer></script><script src="signup.js" defer></script><script src="motion.js" defer></script>
+</head>
+<body class="bg-canvas font-sans text-ink antialiased">
+<svg class="absolute h-0 w-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+ <symbol id="down" viewBox="0 0 24 24"><path d="M12 3v18m-6-6 6 6 6-6"/></symbol>
+ <symbol id="chevron" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+ <symbol id="mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m3 6 9 7 9-7"/></symbol>
+ <symbol id="cube" viewBox="0 0 48 48"><path d="m24 3 19 10v23L24 46 5 36V13L24 3ZM5 13l19 11 19-11M24 24v22"/></symbol>
+ <symbol id="open-box" viewBox="0 0 48 48"><path d="m24 17 13 7-13 7-13-7 13-7ZM11 24v15l13 7 13-7V24M24 31v15M11 24 2 17l13-7 9 7 9-7 13 7-9 7M18 3v5M15 5.5h6M34 1v6M31 4h6"/></symbol>
+ <symbol id="credit" viewBox="0 0 48 48"><path d="M10 17a17 17 0 1 1-1 18M3 16h9V7M19 17h13M19 24h10M19 31h13M24 12v24"/></symbol>
+ <symbol id="delivery" viewBox="0 0 48 48"><path d="m29 7 16 8v24l-16 8-16-8V15l16-8ZM13 15l16 8 16-8M29 23v24M21 11l16 8v8M1 18h8M4 26h5M1 34h8"/></symbol>
+</defs></svg>
+<a href="#prizes" class="skip-link">Skip to prize preview</a>
+<main class="page-shell mx-auto overflow-hidden">
+ <section class="hero relative isolate" id="top" aria-labelledby="hero-title">
+  <div class="hero-art absolute inset-0 h-full w-full" aria-hidden="true">
+   <img class="hero-background" src="assets/hd/hero-plate-2x.webp" alt="" width="3320" height="1896" fetchpriority="high" draggable="false">
+   <div class="hero-energy" aria-hidden="true"><span class="energy-core"></span><span class="energy-flash"></span><span class="energy-spark spark-1"></span><span class="energy-spark spark-2"></span><span class="energy-spark spark-3"></span><span class="energy-spark spark-4"></span><span class="energy-spark spark-5"></span><span class="energy-spark spark-6"></span><span class="energy-spark spark-7"></span><span class="energy-spark spark-8"></span></div>
+   <span class="hero-product-layer hero-product-151"><img class="hero-product" src="assets/hd/03-151-pokemon-center-elite-trainer-box-exclusive-4x.webp" alt="" width="2000" height="2000" draggable="false"></span>
+   <span class="hero-product-layer hero-product-etb"><img class="hero-product" src="assets/hd/04-team-up-elite-trainer-box-4x.webp" alt="" width="1592" height="1524" draggable="false"></span>
+   <span class="hero-product-layer hero-product-evolving"><img class="hero-product" src="assets/hd/01-evolving-skies-booster-box-4x.webp" alt="" width="1804" height="2212" draggable="false"></span>
+   <span class="hero-product-layer hero-product-team"><img class="hero-product" src="assets/hd/14-team-up-booster-box-4x.webp" alt="" width="1572" height="1960" draggable="false"></span>
+   <span class="hero-product-layer hero-product-flashfire"><img class="hero-product" src="assets/hd/08-flashfire-booster-box-4x.webp" alt="" width="1452" height="1740" draggable="false"></span>
+  </div>
+  <header class="site-header absolute flex items-center justify-between">
+   <a class="brand block" href="#top" aria-label="BOXZY home"><img src="assets/hd/logo-2x.webp" alt="BOXZY" width="1253" height="376"></a>
+   <nav class="flex items-center" aria-label="Main navigation"><a href="#top" data-get-notified>Get Notified</a><a href="#prizes">Prize Preview</a></nav>
+   <a class="button button-outline header-shop" href="https://mbjb4e-13.myshopify.com/" target="_blank" rel="noopener noreferrer">BOXZY Store<span class="sr-only"> (opens in a new tab)</span></a>
+  </header>
+  <div class="hero-copy absolute">
+   <p class="launch-eyebrow uppercase text-gold">Launching late October</p>
+   <h1 id="hero-title" class="font-display uppercase"><span class="block">What will</span><span class="block">you unbox?</span></h1>
+   <p class="hero-description">Your first unbox. Your next surprise.<br>Get notified when BOXXY launches.</p>
+   <form class="signup hero-signup relative" data-notify-form novalidate>
+    <label class="sr-only" for="hero-email">Email address for launch notifications</label>
+    <div class="email-bar flex items-stretch"><svg class="icon mail-icon" aria-hidden="true"><use href="#mail"/></svg><input id="hero-email" name="email" type="email" placeholder="Your email address" autocomplete="email" inputmode="email" autocapitalize="none" spellcheck="false" maxlength="254" required aria-describedby="hero-note hero-status"><button type="submit" class="button gold"><span>Notify Me</span></button></div>
+    <p id="hero-note" class="email-note">New customers: sign up early with your email and get <strong>5 free Starter Boxes</strong> at launch.</p><p id="hero-status" class="form-status" role="status" aria-live="polite" hidden></p>
+   </form>
+   <a class="button button-outline explore" href="#prizes">Explore Prizes<svg class="icon" aria-hidden="true"><use href="#down"/></svg></a>
+  </div>
+  <p class="hero-note absolute">Illustrative prize preview. Final lineup to be announced.</p>
+ </section>
+ <section class="prizes relative isolate section-rule" id="prizes" aria-labelledby="prizes-title">
+  <header class="section-header flex items-start justify-between">
+   <div><h2 id="prizes-title">What could be inside?</h2><p>A preview of what you could discover.</p></div>
+   <div class="gallery-controls flex items-center"><button class="gallery-arrow previous" type="button" aria-label="Previous prize" aria-controls="prize-track"><svg class="icon" aria-hidden="true"><use href="#chevron"/></svg></button><span class="gallery-page" aria-hidden="true">1 / 4</span><button class="gallery-arrow next" type="button" aria-label="Next prize" aria-controls="prize-track"><svg class="icon" aria-hidden="true"><use href="#chevron"/></svg></button></div>
+  </header>
+  <div id="prize-viewport" class="prize-viewport relative" role="region" aria-roledescription="carousel" aria-label="Illustrative prizes. Reference values in US dollars. Use arrow keys or drag to explore." tabindex="0">
+   <div class="stage-floor" aria-hidden="true"></div><div id="prize-track" class="prize-track absolute inset-0"></div>
+  </div>
+  <div class="mobile-gallery-nav"></div><p class="gallery-hint">Swipe to see more</p>
+  <p class="value-note">Prizes shown are examples only. Actual prizes will be confirmed at launch.</p>
+  <div class="prize-signup-slot"></div>
+  <p id="prize-announcement" class="sr-only" aria-live="polite" aria-atomic="true"></p>
+  <noscript><p class="noscript-note">Enable JavaScript to explore all 15 illustrative prizes.</p></noscript>
+ </section>
+ <section class="boxes boxes-approved relative isolate" id="boxes" aria-labelledby="boxes-title"><header class="concept-header"><div><h2 id="boxes-title">Choose your box.</h2><p class="intro">Three boxes. A new collectible to discover.</p></div><div class="signup-wrap" data-desktop-signup-slot><form class="signup compact-signup relative" data-notify-form novalidate><label class="sr-only" for="box-email">Email address for launch notifications</label><div class="email-bar flex items-stretch"><svg class="icon mail-icon" aria-hidden="true"><use href="#mail"/></svg><input id="box-email" name="email" type="email" placeholder="Your email address" autocomplete="email" inputmode="email" autocapitalize="none" spellcheck="false" maxlength="254" required aria-describedby="box-note box-status"><button type="submit" class="button gold"><span>Notify Me</span></button></div><p id="box-note" class="email-note">New customers: sign up early with your email and get <strong>5 free Starter Boxes</strong> at launch.</p><p id="box-status" class="form-status" role="status" aria-live="polite" hidden></p></form></div></header><div class="box-grid grid grid-cols-3 text-center">
+   <article class="box-item"><div class="box-visual relative flex justify-center"><img src="assets/hd/starter-2x.webp" alt="Holographic Starter Box" loading="lazy" draggable="false"></div><h3>Starter Box</h3><p>Start with a surprise.</p></article>
+   <article class="box-item"><div class="box-visual relative flex justify-center"><img src="assets/hd/super-2x.webp" alt="Black and pink Super Box" loading="lazy" draggable="false"></div><h3>Super Box</h3><p>Find your next favorite.</p></article>
+   <article class="box-item"><div class="box-visual relative flex justify-center"><img src="assets/hd/ultra-2x.webp" alt="Black and gold Ultra Box" loading="lazy" draggable="false"></div><h3>Ultra Box</h3><p>Chase something extraordinary.</p></article>
+  </div><div class="four-flow" aria-label="Choose a box, reveal a collectible, then request shipping or sell back for site credit"><div class="flow-item"><svg class="flow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 9 4.5v9L12 21l-9-4.5v-9L12 3Zm-9 4.5 9 4.5 9-4.5M12 12v9"/></svg><h3>Choose your <span>box</span></h3><svg class="row-connector" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 12h17m-6-6 6 6-6 6"/></svg></div><div class="flow-item"><svg class="flow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 8 7 3.5-7 3.5-7-3.5L12 8Zm-7 3.5v7L12 22l7-3.5v-7M12 15v7M5 11.5 1 8l7-3.5L12 8l4-3.5L23 8l-4 3.5M8 1v3M6.5 2.5h3M18 1v3M16.5 2.5h3"/></svg><h3>Reveal your <span>collectible</span></h3><svg class="row-connector" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 12h17m-6-6 6 6-6 6"/></svg></div><div class="flow-item"><svg class="flow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5h11v12H3zM14 9h4l3 4v4h-7M3 17h1M8 17h8M20 17h1"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg><h3>Request <span>shipping</span></h3><span class="row-or">or</span></div><div class="flow-item"><svg class="flow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 8V5a2 2 0 0 0-2-2L5 5a3 3 0 0 0-2 3v11a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1H6a3 3 0 0 1-3-3M21 12h-5a2 2 0 0 0 0 4h5"/><circle cx="17" cy="14" r=".5" fill="currentColor" stroke="none"/></svg><h3>Sell for <span>site credit</span></h3></div></div></section>
+ <section class="shop shop-social relative isolate section-rule flex items-center justify-between" id="store" aria-labelledby="shop-title">
+  <img class="shop-art" src="assets/hd/shop-scene-2x.webp" alt="Pokémon Temporal Forces sealed product display" loading="lazy" draggable="false">
+  <div class="shop-copy relative"><h2 id="shop-title">100% Authentic<br class="mobile-break"> Pokémon.<br>Available now.</h2><p>Ships from NYC, USA.</p></div>
+  <div class="shop-action relative text-center"><a class="button button-outline" href="https://mbjb4e-13.myshopify.com/" target="_blank" rel="noopener noreferrer">BOXZY Store<span class="sr-only"> (opens in a new tab)</span></a><p>Opens our Shopify store.</p></div>
+ <div class="social-block"><p class="follow-label">Follow us</p><div class="social-links"><a data-social="whatnot" href="https://www.whatnot.com/s/lmfDDhWE" target="_blank" rel="noopener noreferrer" aria-label="Whatnot: @kenchitotcg (opens in a new tab)" title="Whatnot: @kenchitotcg"><span class="social-icon social-icon-whatnot" aria-hidden="true"><img src="assets/social/whatnot.svg" alt="" width="24" height="24" loading="lazy" decoding="async"></span><span class="social-account"><span class="social-platform">Whatnot</span><span class="account-name">@kenchitotcg</span></span></a><a data-social="instagram" href="https://www.instagram.com/boxzy.io?stkn=MWQxOTFsMXBlZnY0OA==" target="_blank" rel="noopener noreferrer" aria-label="Instagram: @boxzy.io (opens in a new tab)" title="Instagram: @boxzy.io"><span class="social-icon social-icon-instagram" aria-hidden="true"><img src="assets/social/instagram.webp" alt="" width="24" height="24" loading="lazy" decoding="async"></span><span class="social-account"><span class="social-platform">Instagram</span><span class="account-name">@boxzy.io</span></span></a><a data-social="facebook" href="https://www.facebook.com/share/1DhA4Yvs1X/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook: Boxzy.io (opens in a new tab)" title="Facebook: Boxzy.io"><span class="social-icon social-icon-facebook" aria-hidden="true"><img src="assets/social/facebook.ico" alt="" width="24" height="24" loading="lazy" decoding="async"></span><span class="social-account"><span class="social-platform">Facebook</span><span class="account-name">Boxzy.io</span></span></a><a data-social="youtube" href="https://youtube.com/@boxzy_io?si=JZnSXE7qIaY5PAhc" target="_blank" rel="noopener noreferrer" aria-label="YouTube: @boxzy_io (opens in a new tab)" title="YouTube: @boxzy_io"><span class="social-icon social-icon-youtube" aria-hidden="true"><img src="assets/social/youtube.png" alt="" width="24" height="24" loading="lazy" decoding="async"></span><span class="social-account"><span class="social-platform">YouTube</span><span class="account-name">@boxzy_io</span></span></a></div></div></section>
+ <section class="notify section-rule grid" id="notify" aria-labelledby="notify-title">
+  <div class="notify-copy"><h2 id="notify-title">Get notified at launch.</h2><p>BOXZY launches this October.<br>Leave your email and we’ll let you know.</p></div>
+  <form class="signup footer-signup relative" data-notify-form novalidate><label class="sr-only" for="footer-email">Email address for launch notifications</label><div class="email-bar flex items-stretch"><svg class="icon mail-icon" aria-hidden="true"><use href="#mail"/></svg><input id="footer-email" name="email" type="email" placeholder="Your email address" autocomplete="email" inputmode="email" autocapitalize="none" spellcheck="false" maxlength="254" required aria-describedby="footer-note footer-status"><button type="submit" class="button gold"><span>Notify Me</span></button></div><p id="footer-note" class="email-note">New customers: sign up early with your email and get <strong>5 free Starter Boxes</strong> at launch.</p><p id="footer-status" class="form-status" role="status" aria-live="polite" hidden></p></form>
+ </section>
+</main>
+</body>
+</html>

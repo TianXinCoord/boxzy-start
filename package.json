@@ -1,0 +1,11 @@
+{
+  "name": "boxzy-start",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tailwindcss -i src/styles.css -o style.css --minify",
+    "watch": "tailwindcss -i src/styles.css -o style.css --watch",
+    "dev": "node scripts/dev-server.cjs"
+  },
+  "devDependencies": { "tailwindcss": "3.4.17" }
+}
