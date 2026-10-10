@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <title>BOXZY</title>
+  <path fill="#151106" d="M0 0h128v128H0z"/>
+  <g fill="#fff" stroke="#fff" stroke-width="1.5" stroke-linejoin="round">
+    <path d="M47.5 22 64 43 43 64 24.5 43.5Z"/>
+    <path d="M80.5 22 103.5 43.5 85 64 64 43Z"/>
+    <path d="M43 64 64 85 47.5 106 24.5 84.5Z"/>
+    <path d="M85 64 103.5 84.5 80.5 106 64 85Z"/>
+  </g>
+</svg>
