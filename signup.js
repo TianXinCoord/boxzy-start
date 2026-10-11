@@ -2,6 +2,7 @@
  'use strict';
  const forms=[...document.querySelectorAll('[data-notify-form]')];
  const config=window.BOXZY_SIGNUP||{};
+ const trace=(eventName,properties={})=>window.BOXZY_TRACE?.track(eventName,properties);
  const url=new URL(location.href),preview=url.searchParams.get('signup-demo');
  const local=['localhost','127.0.0.1','[::1]',''].includes(location.hostname);
  const endpoint=config.endpoint||forms.find(form=>form.dataset.endpoint)?.dataset.endpoint||'';
@@ -65,7 +66,7 @@
   }
   const email=e.input.value;render('submitting');busy(true);
   const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),config.timeoutMs||10000);
-  try{const result=await save(email,controller.signal);remember();render(result.alreadySubscribed?'returning':'success');e.panel.focus({preventScroll:true});}
+  try{const result=await save(email,controller.signal);trace('signup_submitted',{result:result.alreadySubscribed?'returning':'success'});remember();render(result.alreadySubscribed?'returning':'success');e.panel.focus({preventScroll:true});}
   catch{entries.forEach(entry=>message(entry,'We couldn’t save your email. Please try again.','error',entry===e));}
   finally{clearTimeout(timeout);busy(false);}
  }
