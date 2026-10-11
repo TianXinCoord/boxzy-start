@@ -4,6 +4,7 @@
  const config=window.BOXZY_SIGNUP||{};
  const trace=(eventName,properties={})=>window.BOXZY_TRACE?.track(eventName,properties);
  const url=new URL(location.href),preview=url.searchParams.get('signup-demo');
+ const platform=url.searchParams.get('platform')?.trim().toLowerCase().slice(0,64)||undefined;
  const local=['localhost','127.0.0.1','[::1]',''].includes(location.hostname);
  const endpoint=config.endpoint||forms.find(form=>form.dataset.endpoint)?.dataset.endpoint||'';
  const demo=local&&!endpoint;
@@ -54,7 +55,7 @@
    return{success:true,alreadySubscribed:result==='returning'};
   }
   if(!endpoint)throw new Error('Signup endpoint missing');
-  const response=await fetch(endpoint,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email}),signal});
+  const response=await fetch(endpoint,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email,source:platform}),signal});
   if(!response.ok)throw new Error('Signup failed');
   const result=await response.json();if(result.success!==true)throw new Error('Signup not confirmed');return{...result,...(result.data||{})};
  }
