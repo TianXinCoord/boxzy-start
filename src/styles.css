@@ -75,10 +75,9 @@
  .gallery-arrow{border:1px solid var(--gold);width:44px;height:44px;max-width:44px;max-height:44px;min-width:44px;min-height:44px;border-radius:50%;display:grid;place-items:center;color:var(--gold);transition:background .2s}
  .gallery-arrow:hover{background:#a1833028}.gallery-arrow .icon{width:22px;height:22px;max-width:22px;max-height:22px;min-width:22px;min-height:22px}.previous .icon{transform:rotate(180deg)}
  .prize-viewport{height:calc(100% - 105px);cursor:grab;touch-action:pan-y;outline-offset:-4px;user-select:none}.prize-viewport.is-dragging{cursor:grabbing}
- .stage-floor{position:absolute;left:0;right:0;bottom:8%;height:46%;background:linear-gradient(#000 0%,transparent 35%,#000e 100%),url('assets/hd/hero-plate-iridescent.webp') bottom / 100% 1400% no-repeat;opacity:.56;pointer-events:none}
  .prize-card{position:absolute;top:5%;left:50%;width:16.6%;padding:0 1%;color:inherit;border:0;background:transparent;text-align:center;transform:translateX(calc(-50% + var(--shift)));opacity:var(--opacity);transition:transform .45s var(--ease),opacity .22s;cursor:inherit}
  .prize-track:not(.is-ready) .prize-card{transition:none}.prize-card[aria-hidden=true]{pointer-events:none}.prize-image-area{height:17.1vw;max-height:328px;min-height:197px;display:flex;align-items:flex-end;justify-content:center;position:relative}
- .prize-art{width:100%;height:100%;object-fit:contain;object-position:center bottom;-webkit-box-reflect:below 1px linear-gradient(transparent 60%,#ffffff16);transition:transform .25s var(--ease);pointer-events:none}
+ .prize-art{width:100%;height:100%;object-fit:contain;object-position:center bottom;transition:transform .25s var(--ease);pointer-events:none}
  .prize-card:hover .prize-art{transform:translateY(-4px)}
  .prize-card.is-edge .prize-label{opacity:0}.prize-label{margin-top:14px;line-height:1.3;position:relative;text-shadow:0 1px 5px #000;font-size:clamp(13px,1.12vw,18px)}.prize-label h3{font-weight:600}.prize-label p{font-size:.94em}
  .prize-label .prize-value{font-size:clamp(24px,2.05vw,34px);font-weight:700;letter-spacing:-.035em;color:var(--gold);white-space:nowrap;margin-top:3px}
@@ -173,12 +172,10 @@
  .prizes h2{font-size:36px;max-width:230px;margin:auto}
  .prizes .section-header p{font-size:13px;line-height:1.5;margin-top:10px}
  .prize-viewport{height:auto;min-height:0;margin:16px var(--gutter) 0;cursor:grab}
- .stage-floor{display:none}
  .prize-track{position:relative;inset:auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 14px;align-items:start;grid-template-rows:repeat(2,auto)}
  .prize-card{position:relative;inset:auto;width:auto;padding:0;transform:none;opacity:1;transition:none;min-width:0}
  .prize-card[hidden]{display:none}
  .prize-image-area{height:clamp(80px,calc((100svh - 574px) / 2),140px);min-height:0;max-height:none}
- .prize-art{-webkit-box-reflect:below 1px linear-gradient(transparent 88%,#ffffff12)}
  .prize-card:hover .prize-art{transform:none}
  .prize-label{font-size:14px;line-height:1.35;margin-top:8px}
  .prize-label h3{min-height:19px;display:flex;align-items:center;justify-content:center;overflow-wrap:anywhere}
