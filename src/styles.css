@@ -424,7 +424,11 @@
 .launch-offer strong{display:block;font-size:18px;line-height:1.4;font-weight:600;color:var(--gold)}
 .launch-offer span{display:block;margin-top:4px;font-size:13px;line-height:1.5;color:#c7c2b7}
 @media(max-width:834px){
- .hero{--signup-extra:60px}
+ .hero{--signup-extra:80px}
  .hero-signup .launch-offer{margin:0 0 12px}
  .launch-offer strong{font-size:16px}
 }
+
+/* Buyback detail belongs to the existing site-credit step. */
+#boxes .flow-item .flow-buyback{color:var(--gold);font-size:13px;font-weight:600;line-height:1.4;margin-top:5px}
+@media(max-width:834px){#boxes .flow-item .flow-buyback{font-size:11px}}
