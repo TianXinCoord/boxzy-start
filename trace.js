@@ -5,10 +5,13 @@
  const sessionId=globalThis.crypto?.randomUUID?.()||fallback();
  const platform=new URL(location.href).searchParams.get('platform')?.trim().toLowerCase().slice(0,64)||null;
  const endpoint=config.traceEndpoint||'';
+ const appLayout=window.matchMedia('(max-width:834px)');
+ const isMobileBrowser=navigator.userAgentData?.mobile===true||/Android|iPhone|iPad|iPod|Mobile|IEMobile|Opera Mini/i.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
+ const getSource=()=>isMobileBrowser||appLayout.matches?'app':'pc';
  const track=(eventName,properties={})=>{
   if(!endpoint)return;
   try{
-   void fetch(endpoint,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({eventName,source:'pc',platform,sessionId,pageUrl:location.href,properties}),keepalive:true}).catch(()=>{});
+   void fetch(endpoint,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({eventName,source:getSource(),platform,sessionId,pageUrl:location.href,properties}),keepalive:true}).catch(()=>{});
   }catch{}
  };
  window.BOXZY_TRACE={sessionId,track};
