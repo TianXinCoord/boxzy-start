@@ -3,13 +3,19 @@
 @tailwind utilities;
 
 @font-face{font-family:Anton;src:url('assets/anton.ttf') format('truetype');font-display:swap;font-weight:400}
-@font-face{font-family:Inter;src:url('assets/inter-regular.ttf') format('truetype');font-display:swap;font-weight:400 500}
-@font-face{font-family:Inter;src:url('assets/inter-bold.ttf') format('truetype');font-display:swap;font-weight:600 900}
+@font-face{font-family:Montserrat;src:url('assets/fonts/montserrat/Montserrat-Thin.woff2') format('woff2');font-style:normal;font-display:swap;font-weight:100}
+@font-face{font-family:Montserrat;src:url('assets/fonts/montserrat/Montserrat-Light.woff2') format('woff2');font-style:normal;font-display:swap;font-weight:300}
+@font-face{font-family:Montserrat;src:url('assets/fonts/montserrat/Montserrat-Regular.woff2') format('woff2');font-style:normal;font-display:swap;font-weight:400}
+@font-face{font-family:Montserrat;src:url('assets/fonts/montserrat/Montserrat-Medium.woff2') format('woff2');font-style:normal;font-display:swap;font-weight:500}
+@font-face{font-family:Montserrat;src:url('assets/fonts/montserrat/Montserrat-SemiBold.woff2') format('woff2');font-style:normal;font-display:swap;font-weight:600}
+@font-face{font-family:Montserrat;src:url('assets/fonts/montserrat/Montserrat-Bold.woff2') format('woff2');font-style:normal;font-display:swap;font-weight:700}
+@font-face{font-family:Montserrat;src:url('assets/fonts/montserrat/Montserrat-ExtraBold.woff2') format('woff2');font-style:normal;font-display:swap;font-weight:800}
 @layer base{
  :root{color-scheme:dark;--gold:#f9df87;--gutter:5.1%;--ease:cubic-bezier(.2,.7,.2,1)}
  html{scroll-behavior:smooth;scroll-padding-top:18px}
- body{margin:0}button,input,a{-webkit-tap-highlight-color:transparent}button:disabled{cursor:wait}
- h1,h2,.button{@apply font-display font-normal uppercase}
+ body{margin:0;font-synthesis:none}button,input,a{-webkit-tap-highlight-color:transparent}button:disabled{cursor:wait}
+ h1,h2{@apply font-display font-normal uppercase}
+ .button{@apply font-sans font-semibold uppercase}
  h2{font-size:clamp(28px,2.8vw,44px);line-height:1.13;letter-spacing:-.02em}
  input{min-width:0}a,button,input{outline-offset:5px}a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--gold)}
  ::selection{background:var(--gold);color:#080808}
@@ -40,7 +46,7 @@
  .hero-product-flashfire{left:81.1%;top:26.5%;width:14.2%;--rotation:14deg;--entry-x:-33%;--entry-y:20%;--entry-turn:10deg;--entry-delay:.48s;--float-time:7s;--float-distance:-6px}.hero:after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,#0002,transparent 47%)}
  .site-header{left:var(--gutter);right:var(--gutter);top:1.8%;z-index:5}
  .brand{width:14.5%;max-width:278px}.brand img{width:100%;height:auto}
- .site-header nav{gap:40px;font-size:clamp(14px,.98vw,16px);position:absolute;left:50%;transform:translateX(-50%)}.site-header nav a{padding:10px 0;transition:color .18s;position:relative}.site-header nav a:after{content:"";position:absolute;left:50%;right:50%;bottom:3px;height:1px;background:var(--gold);transition:left .2s var(--ease),right .2s var(--ease)}.site-header nav a:hover{color:var(--gold)}.site-header nav a:hover:after,.site-header nav a:focus-visible:after{left:0;right:0}
+ .site-header nav{font-weight:500;gap:40px;font-size:clamp(14px,.98vw,16px);position:absolute;left:50%;transform:translateX(-50%)}.site-header nav a{padding:10px 0;transition:color .18s;position:relative}.site-header nav a:after{content:"";position:absolute;left:50%;right:50%;bottom:3px;height:1px;background:var(--gold);transition:left .2s var(--ease),right .2s var(--ease)}.site-header nav a:hover{color:var(--gold)}.site-header nav a:hover:after,.site-header nav a:focus-visible:after{left:0;right:0}
  .header-shop{font-size:15px;min-width:132px;min-height:40px;padding:9px 20px}
  .hero-copy{left:var(--gutter);top:19.8%;width:42%}
  .launch-eyebrow{font-size:clamp(13px,1.12vw,18px);letter-spacing:.2em;line-height:1.2;font-weight:600;margin-bottom:8px}
@@ -55,7 +61,7 @@
  .email-bar:has([aria-invalid=true]){border-color:#ed9987}
  .email-bar .button{border-radius:4px;margin:-1px;min-width:128px;padding:10px 16px;font-size:16px}
  .mail-icon{align-self:center;margin-left:14px;width:20px;height:20px;color:#ddd}.mail-icon+input{padding-left:12px}
- .form-status{position:static;margin-top:7px;color:#ffb4a7;background:transparent;border:0;padding:0;font:13px/1.5 Inter,Arial,sans-serif;box-shadow:none;overflow-wrap:anywhere}
+ .form-status{position:static;margin-top:7px;color:#ffb4a7;background:transparent;border:0;padding:0;font:13px/1.5 Montserrat,Arial,"PingFang SC","Microsoft YaHei",sans-serif;box-shadow:none;overflow-wrap:anywhere}
  .form-status.error{color:#ffb4a7}
  .form-status.error:before{content:"!";display:inline-grid;place-items:center;width:14px;height:14px;margin-right:6px;border:1px solid currentColor;border-radius:50%;font-size:10px;font-weight:700;vertical-align:1px}
  .signup[data-state=error] .email-bar{border-color:#ed9987}
@@ -80,7 +86,7 @@
  .prize-art{width:100%;height:100%;object-fit:contain;object-position:center bottom;transition:transform .25s var(--ease);pointer-events:none}
  .prize-card:hover .prize-art{transform:translateY(-4px)}
  .prize-card.is-edge .prize-label{opacity:0}.prize-label{margin-top:14px;line-height:1.3;position:relative;text-shadow:0 1px 5px #000;font-size:clamp(13px,1.12vw,18px)}.prize-label h3{font-weight:600}.prize-label p{font-size:.94em}
- .prize-label .prize-value{font-size:clamp(24px,2.05vw,34px);font-weight:700;letter-spacing:-.035em;color:var(--gold);white-space:nowrap;margin-top:3px}
+ .prize-label .prize-value{font-variant-numeric:lining-nums tabular-nums;font-size:clamp(24px,2.05vw,34px);font-weight:700;letter-spacing:-.035em;color:var(--gold);white-space:nowrap;margin-top:3px}
  .value-note{position:absolute;bottom:2.5%;left:var(--gutter);font-size:clamp(10px,.83vw,13px);color:#b3b3b0}
  .boxes{padding-top:2.3vw;overflow:visible}
  .boxes .box-date{white-space:nowrap;padding-top:8px;font-size:clamp(12px,1vw,16px)}
@@ -113,7 +119,7 @@
  .confirmation-copy{min-width:0}
  .confirmation-title{font-size:18px;font-weight:600;line-height:1.35;color:#f5f5ef}
  .confirmation-description{font-size:13px;line-height:1.5;color:#bbb;margin-top:3px}
- .change-email{display:block;color:var(--gold);font:12px/1.4 Inter,Arial,sans-serif;text-decoration:underline;text-underline-offset:3px;min-height:40px;padding:8px 0;text-align:left}
+ .change-email{display:block;color:var(--gold);font:12px/1.4 Montserrat,Arial,"PingFang SC","Microsoft YaHei",sans-serif;text-decoration:underline;text-underline-offset:3px;min-height:40px;padding:8px 0;text-align:left}
  .change-email:hover{color:#fff0ba}
  .compact-signup .confirmation-title{font-size:16px}
  .signup .email-bar:has(button:disabled){opacity:.75}
@@ -162,7 +168,7 @@
  .signup .email-bar .button{min-width:0;flex:0 0 34%;padding:8px 6px;font-size:16px;min-height:46px}
  .signup .email-note{font-size:12px;line-height:1.5;text-align:left;margin-top:7px}
  .signup .form-status{position:static;margin-top:10px;font-size:13px;line-height:1.5;box-shadow:none}
- .hero .explore{order:6;align-self:center;margin:12px 0 0;padding:10px 16px;min-width:0;min-height:44px;border:0;background:none;font-family:Inter,Arial,sans-serif;text-transform:none;font-size:16px;font-weight:600;color:var(--gold);gap:10px}
+ .hero .explore{order:6;align-self:center;margin:12px 0 0;padding:10px 16px;min-width:0;min-height:44px;border:0;background:none;font-family:Montserrat,Arial,"PingFang SC","Microsoft YaHei",sans-serif;text-transform:none;font-size:16px;font-weight:600;color:var(--gold);gap:10px}
  .hero-note{display:none}
  h2{font-size:32px;line-height:1.12}
  .section-header{padding:0 var(--gutter);gap:12px}
@@ -296,7 +302,7 @@
 }
 
 /* Approved compact fulfillment flow: scoped to the boxes section. */
-#boxes{max-width:1440px;margin:auto;padding:32px 5.1% 28px}#boxes h2{font-size:36px;line-height:1.15}#boxes .intro{font-size:16px;color:#c7c4bc;margin-top:10px}#boxes .box-grid{padding:12px 0 0;background:none}#boxes .box-grid:before{display:none}#boxes .box-visual{height:170px;min-height:0}#boxes .box-item h3{font-size:16px;margin-top:8px}#boxes .box-item p{font-size:13px;margin-top:6px}#boxes .journey{display:grid;grid-template-columns:1fr 28px 1.65fr;gap:28px;align-items:center;margin-top:40px}#boxes .opening{display:grid;grid-template-columns:1fr 24px 1fr;gap:18px;align-items:start}#boxes .step{text-align:center}#boxes .flow-icon{display:block;width:30px;height:30px;color:#f9df87;margin:0 auto 12px}#boxes .flow-arrow{align-self:center;width:24px;height:24px;color:#858078}#boxes .step h3,#boxes .outcome h3{font-family:Inter,Arial,sans-serif;font-size:14px;font-weight:600;line-height:1.45;margin:0}#boxes .decision-label{font-size:12px;text-align:center;color:#b8b4aa;margin:0 0 14px}#boxes .outcomes{display:grid;grid-template-columns:1fr 30px 1fr;align-items:start;gap:12px}#boxes .outcome{text-align:center}#boxes .outcome p{font-size:13px;line-height:1.5;color:#c7c4bc;margin:5px 0 0}#boxes .or{align-self:center;text-align:center;font-size:12px;color:#a4a097}#boxes .scope{font-size:12px;line-height:1.5;color:#aaa79f;text-align:center;margin-top:14px}#boxes .signup-wrap{margin:28px auto 0;max-width:500px}#boxes .signup-wrap .compact-signup{width:100%;padding:0}#boxes .signup-wrap .email-note{text-align:center;font-size:12px}#boxes .signup-wrap .mail-icon{width:20px;height:20px}#boxes .signup-wrap .email-bar{height:46px}#boxes .signup-wrap .email-bar input{min-width:0}#boxes .signup-wrap .button{font-size:16px}@media(max-width:834px){#boxes{padding:24px 20px 22px}#boxes h2{font-size:28px}#boxes .intro{font-size:14px;line-height:1.5;margin-top:8px}#boxes .box-grid{padding:16px 0 0;gap:10px;margin:0 -8px}#boxes .box-visual{height:110px}#boxes .box-item h3{font-size:13px;margin-top:8px;white-space:nowrap}#boxes .box-item p{font-size:12px;line-height:1.5;white-space:normal;margin-top:4px}#boxes .journey{display:flex;flex-direction:column;gap:0;margin-top:30px}#boxes .opening{width:100%;grid-template-columns:1fr 24px 1fr;gap:20px}#boxes .step h3,#boxes .outcome h3{font-size:14px}#boxes .flow-icon{width:28px;height:28px;margin-bottom:10px}#boxes .to-decision{transform:rotate(90deg);width:20px;height:20px;margin:12px 0 8px;color:#76716a}#boxes .decision{width:100%}#boxes .decision-label{margin-bottom:16px;font-size:12px}#boxes .outcomes{grid-template-columns:1fr 22px 1fr;gap:8px;align-items:start}#boxes .outcome p{font-size:12px;line-height:1.5;max-width:125px;margin:5px auto 0}#boxes .scope{font-size:12px;max-width:300px;margin:16px auto 0}#boxes .signup-wrap{display:none}}
+#boxes{max-width:1440px;margin:auto;padding:32px 5.1% 28px}#boxes h2{font-size:36px;line-height:1.15}#boxes .intro{font-size:16px;color:#c7c4bc;margin-top:10px}#boxes .box-grid{padding:12px 0 0;background:none}#boxes .box-grid:before{display:none}#boxes .box-visual{height:170px;min-height:0}#boxes .box-item h3{font-size:16px;margin-top:8px}#boxes .box-item p{font-size:13px;margin-top:6px}#boxes .journey{display:grid;grid-template-columns:1fr 28px 1.65fr;gap:28px;align-items:center;margin-top:40px}#boxes .opening{display:grid;grid-template-columns:1fr 24px 1fr;gap:18px;align-items:start}#boxes .step{text-align:center}#boxes .flow-icon{display:block;width:30px;height:30px;color:#f9df87;margin:0 auto 12px}#boxes .flow-arrow{align-self:center;width:24px;height:24px;color:#858078}#boxes .step h3,#boxes .outcome h3{font-family:Montserrat,Arial,"PingFang SC","Microsoft YaHei",sans-serif;font-size:14px;font-weight:600;line-height:1.45;margin:0}#boxes .decision-label{font-size:12px;text-align:center;color:#b8b4aa;margin:0 0 14px}#boxes .outcomes{display:grid;grid-template-columns:1fr 30px 1fr;align-items:start;gap:12px}#boxes .outcome{text-align:center}#boxes .outcome p{font-size:13px;line-height:1.5;color:#c7c4bc;margin:5px 0 0}#boxes .or{align-self:center;text-align:center;font-size:12px;color:#a4a097}#boxes .scope{font-size:12px;line-height:1.5;color:#aaa79f;text-align:center;margin-top:14px}#boxes .signup-wrap{margin:28px auto 0;max-width:500px}#boxes .signup-wrap .compact-signup{width:100%;padding:0}#boxes .signup-wrap .email-note{text-align:center;font-size:12px}#boxes .signup-wrap .mail-icon{width:20px;height:20px}#boxes .signup-wrap .email-bar{height:46px}#boxes .signup-wrap .email-bar input{min-width:0}#boxes .signup-wrap .button{font-size:16px}@media(max-width:834px){#boxes{padding:24px 20px 22px}#boxes h2{font-size:28px}#boxes .intro{font-size:14px;line-height:1.5;margin-top:8px}#boxes .box-grid{padding:16px 0 0;gap:10px;margin:0 -8px}#boxes .box-visual{height:110px}#boxes .box-item h3{font-size:13px;margin-top:8px;white-space:nowrap}#boxes .box-item p{font-size:12px;line-height:1.5;white-space:normal;margin-top:4px}#boxes .journey{display:flex;flex-direction:column;gap:0;margin-top:30px}#boxes .opening{width:100%;grid-template-columns:1fr 24px 1fr;gap:20px}#boxes .step h3,#boxes .outcome h3{font-size:14px}#boxes .flow-icon{width:28px;height:28px;margin-bottom:10px}#boxes .to-decision{transform:rotate(90deg);width:20px;height:20px;margin:12px 0 8px;color:#76716a}#boxes .decision{width:100%}#boxes .decision-label{margin-bottom:16px;font-size:12px}#boxes .outcomes{grid-template-columns:1fr 22px 1fr;gap:8px;align-items:start}#boxes .outcome p{font-size:12px;line-height:1.5;max-width:125px;margin:5px auto 0}#boxes .scope{font-size:12px;max-width:300px;margin:16px auto 0}#boxes .signup-wrap{display:none}}
 #boxes .concept-header{display:grid;grid-template-columns:1fr minmax(380px,500px);gap:40px;align-items:start}
 #boxes .concept-header .signup-wrap{margin:0;width:100%;max-width:none}
 #boxes .concept-header .email-note{text-align:left;line-height:1.5}
@@ -322,7 +328,7 @@
 #boxes .four-flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:36px;align-items:start;margin:40px 0 4px}
 #boxes .flow-item{position:relative;text-align:center}
 #boxes .flow-item .flow-icon{width:28px;height:28px;margin:0 auto 12px}
-#boxes .flow-item h3{font-family:Inter,Arial,sans-serif;font-size:14px;font-weight:600;line-height:1.5;margin:0}
+#boxes .flow-item h3{font-family:Montserrat,Arial,"PingFang SC","Microsoft YaHei",sans-serif;font-size:14px;font-weight:600;line-height:1.5;margin:0}
 #boxes .flow-item h3 span:before{content:' '}
 #boxes .flow-item p{font-size:12px;line-height:1.5;color:#c7c4bc;margin-top:4px}
 #boxes .row-connector,#boxes .row-or{position:absolute;left:calc(100% + 6px);top:5px;width:24px;height:24px;color:#a4a097}
