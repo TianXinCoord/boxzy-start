@@ -19,3 +19,9 @@ https://brand.youtube/youtube-icon/
 https://www.gstatic.com/marketing-cms/78/29/3e68a1414bb28d0b7e47b44c3c91/youtube-icon.zip
 
 Labels: Whatnot @kenchitotcg, Instagram @boxzy.io, Facebook page display name Boxzy.io (not a verified handle), YouTube @boxzy_io. Whatnot handle was confirmed by the user screenshot. Profile destinations are supplied by the user. Metrics and ratings are intentionally not displayed. Source brand assets are separate from generated design previews.
+
+TikTok addition — 2026-10-26
+tiktok.svg: vector from Iconify logos:tiktok-icon (SVG Logos collection). Main path fill set to white for the approved dark-background treatment; cyan and pink paths preserved.
+https://api.iconify.design/logos/tiktok-icon.svg
+Profile supplied by the BOXZY team: https://www.tiktok.com/@boxzy.usa?_r=1&_t=ZT-9ArYO2yRWes
+Label: TikTok @boxzy.usa.
