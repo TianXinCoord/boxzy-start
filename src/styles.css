@@ -348,34 +348,34 @@
 
 /* Approved official-color social links: equal emphasis, Whatnot first. */
 .shop-social .social-block{width:auto;max-width:calc(100% - var(--gutter)*2)}
-.shop-social .social-links{display:flex;gap:24px;align-items:center}
-.shop-social .social-links a{gap:10px;min-height:44px;color:#e0dcd3}
-.shop-social .social-icon{display:flex;align-items:center;justify-content:center;width:28px;height:24px;flex:none}
-.shop-social .social-icon img{display:block;width:24px;height:24px;object-fit:contain;max-width:none}
-.shop-social .social-icon-youtube img{width:42px;height:36px}
-.shop-social .social-links a:hover .account-name{text-decoration:underline;text-underline-offset:4px}
+:is(.shop-social,.hero-community) .social-links{display:flex;gap:24px;align-items:center}
+:is(.shop-social,.hero-community) .social-links a{gap:10px;min-height:44px;color:#e0dcd3}
+:is(.shop-social,.hero-community) .social-icon{display:flex;align-items:center;justify-content:center;width:28px;height:24px;flex:none}
+:is(.shop-social,.hero-community) .social-icon img{display:block;width:24px;height:24px;object-fit:contain;max-width:none}
+:is(.shop-social,.hero-community) .social-icon-youtube img{width:42px;height:36px}
+:is(.shop-social,.hero-community) .social-links a:hover .account-name{text-decoration:underline;text-underline-offset:4px}
 @media(min-width:835px) and (max-width:1100px){
- .shop-social .social-links{gap:16px}
- .shop-social .social-links a{gap:7px}
- .shop-social .social-icon{width:24px}
- .shop-social .social-icon img{width:22px;height:22px}
- .shop-social .social-icon-youtube img{width:38px;height:33px}
+ :is(.shop-social,.hero-community) .social-links{gap:16px}
+ :is(.shop-social,.hero-community) .social-links a{gap:7px}
+ :is(.shop-social,.hero-community) .social-icon{width:24px}
+ :is(.shop-social,.hero-community) .social-icon img{width:22px;height:22px}
+ :is(.shop-social,.hero-community) .social-icon-youtube img{width:38px;height:33px}
 }
 @media(max-width:834px){
  .shop-social .social-block{width:100%;max-width:none;margin-top:10px}
- .shop-social .social-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:20px;row-gap:0}
- .shop-social .social-links a{justify-self:start;gap:10px;min-height:44px}
- .shop-social .follow-label{margin-bottom:4px}
+ :is(.shop-social,.hero-community) .social-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:20px;row-gap:0}
+ :is(.shop-social,.hero-community) .social-links a{justify-self:start;gap:10px;min-height:44px}
+ :is(.shop-social,.hero-community) .follow-label{margin-bottom:4px}
 }
 
 /* Platform identification and searchable account names, approved two-line layout. */
-.shop-social .social-account{display:flex;flex-direction:column;gap:2px;line-height:1.4}
-.shop-social .social-platform{font-size:14px;line-height:20px;color:#f5f4ef;font-weight:400}
-.shop-social .account-name{font-size:12px;line-height:17px;color:#bdbab4;font-weight:400}
-.shop-social .follow-label{margin-bottom:6px}
+:is(.shop-social,.hero-community) .social-account{display:flex;flex-direction:column;gap:2px;line-height:1.4}
+:is(.shop-social,.hero-community) .social-platform{font-size:14px;line-height:20px;color:#f5f4ef;font-weight:400}
+:is(.shop-social,.hero-community) .account-name{font-size:12px;line-height:17px;color:#bdbab4;font-weight:400}
+:is(.shop-social,.hero-community) .follow-label{margin-bottom:6px}
 @media(min-width:835px) and (max-width:1100px){
- .shop-social .social-links{gap:12px}
- .shop-social .social-platform{font-size:13px}
+ :is(.shop-social,.hero-community) .social-links{gap:12px}
+ :is(.shop-social,.hero-community) .social-platform{font-size:13px}
  .shop-social .shop-art{top:35%}
 }
 
@@ -434,3 +434,40 @@
 /* Buyback detail belongs to the existing site-credit step. */
 #boxes .flow-item .flow-buyback{color:var(--gold);font-size:13px;font-weight:600;line-height:1.4;margin-top:5px}
 @media(max-width:834px){#boxes .flow-item .flow-buyback{font-size:11px}}
+
+/* Homepage community reuses the original Follow us component typography and icons. */
+.hero-community{width:100%;max-width:500px;margin-top:26px;color:#f7f6f1}
+.hero-community .follow-label{font-family:Montserrat,Arial,sans-serif;font-size:12px;font-weight:400;line-height:18px;letter-spacing:0;text-transform:none;color:#b8b3a8;margin:0 0 6px}
+.whatnot-profile{display:grid;grid-template-columns:28px minmax(0,1fr) auto;align-items:center;gap:10px;min-height:44px;text-decoration:none;border-radius:6px}
+.whatnot-identity{grid-column:2;grid-row:1;min-width:0}
+.whatnot-follow{grid-column:3;grid-row:1;display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:44px;padding:0 13px;border:1px solid #93814d;border-radius:5px;color:var(--gold);font-size:13px;font-weight:500;white-space:nowrap;transition:background .18s,border-color .18s}
+.whatnot-follow .icon{width:15px;height:15px}
+.whatnot-profile:hover .whatnot-follow,.whatnot-profile:focus-visible .whatnot-follow{background:#272112;border-color:var(--gold)}
+.whatnot-profile:hover .account-name{text-decoration:underline;text-underline-offset:4px}
+.whatnot-reputation{grid-column:1/-1;display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-size:13px;line-height:1.5;color:#cbc8c0;font-variant-numeric:tabular-nums}
+.whatnot-reputation b{color:#f7f6f1;font-weight:500}
+.whatnot-rating{display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
+.rating-star{width:15px;height:15px;fill:var(--gold);flex:none}
+.review-count{font-size:12px}
+.whatnot-sold{white-space:nowrap;border-left:1px solid #68645a;padding-left:12px}
+.hero-community .hero-social-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:24px;row-gap:0;list-style:none;padding:14px 0 0;margin:14px 0 0;border-top:1px solid #49463d}
+.hero-social-list li{display:flex;min-width:0}
+.hero-social-list a{border-radius:4px;text-decoration:none}
+@media(min-width:835px){
+ .hero-community{width:max-content;min-width:min(100%,500px);max-width:none}
+ .hero-community .hero-social-list{grid-template-columns:repeat(4,max-content)}
+ .hero{height:auto;min-height:57vw;max-height:none}
+ .hero-copy{position:relative;top:auto;left:auto;margin-left:var(--gutter);padding:clamp(108px,8.6vw,165px) 0 44px}
+}
+@media(min-width:835px) and (max-width:1100px){
+ .whatnot-profile{grid-template-columns:24px minmax(0,1fr) auto;column-gap:7px}
+ .hero-community .hero-social-list{column-gap:12px}
+}
+@media(max-width:834px){
+ .hero{padding-bottom:36px}
+ .hero-description{order:3;margin-top:14px}
+ .hero-art{order:4;width:100%;max-width:460px;aspect-ratio:1/1.06;margin-top:12px}
+ .hero .explore{align-self:flex-start;margin:16px var(--gutter) 0;min-width:190px;border:1px solid #dbc572;border-radius:5px;background:#060606b8;color:#f4f0dc;text-transform:uppercase;font-size:14px;padding:10px 16px}
+ .hero-community{order:7;width:auto;max-width:none;margin:28px var(--gutter) 0}
+ .hero-community .hero-social-list{column-gap:20px}
+}
