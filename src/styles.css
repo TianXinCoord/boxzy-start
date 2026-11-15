@@ -47,7 +47,6 @@
  .site-header{left:var(--gutter);right:var(--gutter);top:1.8%;z-index:5}
  .brand{width:14.5%;max-width:278px}.brand img{width:100%;height:auto}
  .site-header nav{font-weight:500;gap:40px;font-size:clamp(14px,.98vw,16px);position:absolute;left:50%;transform:translateX(-50%)}.site-header nav a{padding:10px 0;transition:color .18s;position:relative}.site-header nav a:after{content:"";position:absolute;left:50%;right:50%;bottom:3px;height:1px;background:var(--gold);transition:left .2s var(--ease),right .2s var(--ease)}.site-header nav a:hover{color:var(--gold)}.site-header nav a:hover:after,.site-header nav a:focus-visible:after{left:0;right:0}
- .header-shop{font-size:15px;min-width:132px;min-height:40px;padding:9px 20px}
  .hero-copy{left:var(--gutter);top:19.8%;width:42%}
  .launch-eyebrow{font-size:clamp(13px,1.12vw,18px);letter-spacing:.2em;line-height:1.2;font-weight:600;margin-bottom:8px}
  .hero h1{font-size:clamp(70px,7.5vw,144px);letter-spacing:-.033em;line-height:.995}.hero h1 span{white-space:nowrap}
@@ -104,10 +103,6 @@
  .step-icon{height:2.8vw;width:2.8vw;max-height:44px;max-width:44px;min-height:30px;min-width:30px;fill:none;stroke:var(--gold);stroke-width:1.6;flex-shrink:0}
  .compact-signup{width:36%;flex-shrink:0;padding-left:2%;border-left:0}
  .compact-signup .email-bar{min-height:44px;height:44px}.compact-signup .email-bar input{font-size:14px;padding:10px 15px}.compact-signup .button{font-size:16px;padding:10px 14px;min-width:120px}
- .shop{height:20.3vw;max-height:390px;min-height:240px;padding:0 var(--gutter);overflow:hidden}
- .shop-art{position:absolute;width:90%;max-width:none;height:auto;left:8%;top:50%;transform:translateY(-50%);z-index:-1;mask-image:linear-gradient(90deg,transparent 38%,#000 40%,#000 73.5%,transparent 75%)}
- .shop-copy{width:40%}.shop-copy h2{font-size:clamp(28px,2.8vw,44px);line-height:1.1;white-space:nowrap}.shop-copy p{font-size:clamp(14px,1.1vw,18px);line-height:1.3;margin-top:7px;letter-spacing:-.03em;white-space:nowrap}
- .shop-action{width:148px}.shop-action .button{width:100%;padding:10px 14px}.shop-action p{font-size:11px;color:#b6b3ab;margin-top:10px;white-space:nowrap}
  .notify{grid-template-columns:44% 1fr;gap:3.5%;padding:clamp(32px,2.8vw,54px) var(--gutter);background:linear-gradient(#08090a,#030303);align-items:start;min-height:0}
  .notify h2{font-size:clamp(28px,2.65vw,42px);white-space:nowrap}.notify-copy p{font-size:clamp(14px,1.15vw,18px);line-height:1.35;margin-top:8px;letter-spacing:-.03em}
  
@@ -127,7 +122,7 @@
  .footer-signup .form-status{position:static;margin-top:10px}
 }
 @media(min-width:1921px){.hero-copy h1{font-size:144px}.prizes{padding-top:43px}.boxes{padding-top:44px}.box-grid{padding-bottom:36px}.how-row{padding-top:29px;padding-bottom:25px}.notify{padding-top:54px;padding-bottom:54px}.hero-description{font-size:22px}}
-@media(min-width:835px) and (max-width:1250px){.hero{min-height:600px}.hero-copy{top:20%}.hero h1{font-size:7.6vw}.hero-description{font-size:1.4vw}.hero-signup{margin-top:21px}.hero .explore{margin-top:16px;min-height:44px;padding:10px 20px}.prizes{min-height:450px}.prize-image-area{min-height:195px}.how-row li{font-size:10.5px}.step-content{gap:7px}.how-row li:not(:last-child):after{min-width:22px;background-size:16px 12px}.compact-signup{width:35%;padding-left:1.5%}.compact-signup .button{padding:10px 12px}.notify h2{font-size:2.65vw}.shop{min-height:220px}}
+@media(min-width:835px) and (max-width:1250px){.hero{min-height:600px}.hero-copy{top:20%}.hero h1{font-size:7.6vw}.hero-description{font-size:1.4vw}.hero-signup{margin-top:21px}.hero .explore{margin-top:16px;min-height:44px;padding:10px 20px}.prizes{min-height:450px}.prize-image-area{min-height:195px}.how-row li{font-size:10.5px}.step-content{gap:7px}.how-row li:not(:last-child):after{min-width:22px;background-size:16px 12px}.compact-signup{width:35%;padding-left:1.5%}.compact-signup .button{padding:10px 12px}.notify h2{font-size:2.65vw}}
 /* Shared form details; mobile changes size, never scales the page. */
 .gallery-page,.gallery-hint,.mobile-gallery-nav,.prize-signup-slot{display:none}
 .gallery-arrow:disabled{cursor:default;opacity:.4}
@@ -143,8 +138,6 @@
  .site-header{position:relative;inset:auto;margin:14px var(--gutter) 24px;order:0;min-height:44px}
  .brand{width:112px;max-width:32%;min-height:44px;display:flex;align-items:center}
  .site-header nav{display:none}
- .header-shop{display:inline-flex;min-width:104px;min-height:44px;padding:8px 12px;font-size:14px;background:transparent;border:0;position:relative}
- .header-shop:before{content:"";position:absolute;inset:5px 0;border:1px solid #dbc572;border-radius:5px;pointer-events:none}
  .launch-eyebrow{order:1;margin:0 var(--gutter) 8px;font-size:12px;line-height:1.5;letter-spacing:.17em}
  .hero h1{order:2;margin:0 var(--gutter);font-size:clamp(58px,16.8vw,104px);line-height:1.04;letter-spacing:-.03em}
  .hero-art{order:3;position:relative;inset:auto;z-index:0;width:min(100%,max(210px,calc((100svh - 460px - var(--signup-extra)) / 1.06)));height:auto;aspect-ratio:1 / 1.06;align-self:center;margin:4px 0 0;overflow:hidden;mask-image:linear-gradient(transparent,#000 7%,#000 91%,transparent),linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-composite:intersect}
@@ -212,14 +205,6 @@
  .step-content{display:flex;flex-direction:column;gap:9px;min-width:0}
  .step-icon{width:32px;height:32px;min-width:32px;min-height:32px}
  .how-row li:not(:last-child):after{display:block;position:absolute;right:-19px;top:9px;min-width:24px;width:24px;background-size:17px 12px}
- .shop{display:grid;grid-template-columns:48% 1fr;align-content:center;align-items:start;height:230px;min-height:230px;max-height:none;padding:16px var(--gutter);gap:12px;overflow:hidden}
- .shop-copy{width:auto;grid-column:1;z-index:1}
- .shop-copy h2{font-size:23px;line-height:1.15;white-space:normal}
- .shop-copy p{display:none}
- .shop-art{width:140%;left:-4%;top:50%;mask-image:linear-gradient(90deg,transparent 37%,#000 39%,#000 74%,transparent 76%)}
- .shop-action{width:100%;max-width:148px;grid-column:1;text-align:left;z-index:1}
- .shop-action .button{min-height:44px;font-size:16px;padding:10px 12px}
- .shop-action p{font-size:12px;line-height:1.5;white-space:normal;margin-top:7px}
  .notify{grid-template-columns:1fr;padding:28px var(--gutter) 32px;gap:18px;background:#030303}
  .notify h2{font-size:30px;line-height:1.15;white-space:normal}
  .notify-copy p{font-size:14px;line-height:1.5;letter-spacing:0}
@@ -276,10 +261,8 @@
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}.prize-card:hover .prize-art,.box-item:hover img{transform:none!important}}
 
-/* Approved social, early signup and buyback integration. */
-.shop-social{height:348px;min-height:348px;max-height:none}.shop-copy{margin-top:-66px}.shop-copy p{font-size:14px;color:#c3c1bb;letter-spacing:0;line-height:1.6}.mobile-break{display:none}.social-block{position:absolute;left:var(--gutter);bottom:32px}.social-caption{font-size:12px;color:#8e8c86;margin:0 0 3px}.social-links{display:flex;gap:24px}.social-links a{display:inline-flex;align-items:center;gap:7px;min-height:44px;font-size:14px;color:#ceccc6;text-decoration:none}.social-links svg{width:18px;height:18px;flex:none}.social-links a:hover{color:#f9df87}.social-links a:focus-visible{outline:1px solid #f9df87;outline-offset:4px}.shop-art{top:48%}.shop-action{width:148px}@media(max-width:834px){.shop-social{height:auto;min-height:0;display:grid;grid-template-columns:48% 1fr;align-content:start;padding:28px 20px 22px;gap:16px 8px}.shop-copy{margin-top:0;grid-column:1}.shop-copy h2{font-size:23px;line-height:1.15}.shop-copy p{display:block;font-size:12px;line-height:1.65;white-space:normal;margin-top:12px}.mobile-break{display:block}.shop-art{top:146px;left:-4%;width:140%}.shop-action{grid-column:1;margin-top:0}.shop-action p{font-size:11px}.social-block{position:static;grid-column:1/-1;margin-top:22px}.social-caption{font-size:12px}.social-links{gap:19px;justify-content:flex-start}.social-links a{font-size:13px;gap:6px;min-height:44px}.social-links svg{width:18px;height:18px}}.shop-social{height:280px;min-height:280px}.shop-copy{margin-top:-48px}.shop-copy h2{font-size:32px}.shop-copy p{font-size:13px;margin-top:10px}.social-block{bottom:26px}.social-links{gap:26px}.social-text{display:flex;flex-direction:column;line-height:1.5}.platform{font-size:12px;color:#95938d}.handle{font-size:13px;color:#e7e5df}.social-links a{gap:8px}.shop-art{width:80%;left:15%;top:49%}@media(max-width:834px){.shop-social{height:auto;min-height:0;padding:20px 20px 16px;gap:10px 8px;grid-template-columns:48% 1fr}.shop-copy{margin:0}.shop-copy h2{font-size:21px;line-height:1.13}.shop-copy p{font-size:12px;line-height:1.5;margin-top:8px;white-space:nowrap}.shop-action{max-width:136px}.shop-action .button{min-height:38px;font-size:14px;padding:8px 10px}.shop-action p{display:none}.shop-art{width:122%;left:6%;top:109px}.social-block{margin-top:12px}.social-links{gap:0;justify-content:space-between}.social-links a{gap:7px;min-height:44px}.social-links svg{width:17px;height:17px}.platform{font-size:12px}.handle{font-size:12px}}.social-block{width:355px;bottom:20px}.follow-label{font-size:12px;line-height:18px;margin:0 0 2px;color:#b8b3a8}.social-links{display:flex;gap:24px;align-items:center}.social-links a{gap:7px;min-height:44px;white-space:nowrap;color:#e0dcd3;font-size:13px;font-weight:400}.social-links svg{width:18px;height:18px}.account-name{font-size:13px;line-height:20px}.social-links a:hover{color:#f9df87}.social-links a:focus-visible{outline:1px solid #f9df87;outline-offset:3px}@media(max-width:834px){.social-block{width:100%;margin-top:10px}.social-links{justify-content:space-between;gap:12px}.social-links a{min-height:44px;gap:7px}.follow-label{font-size:12px;line-height:18px}.account-name{font-size:13px}.social-links svg{width:18px;height:18px}}
+/* Approved social, early signup and buyback integration. */.mobile-break{display:none}.social-block{position:absolute;left:var(--gutter);bottom:32px}.social-caption{font-size:12px;color:#8e8c86;margin:0 0 3px}.social-links{display:flex;gap:24px}.social-links a{display:inline-flex;align-items:center;gap:7px;min-height:44px;font-size:14px;color:#ceccc6;text-decoration:none}.social-links svg{width:18px;height:18px;flex:none}.social-links a:hover{color:#f9df87}.social-links a:focus-visible{outline:1px solid #f9df87;outline-offset:4px}@media(max-width:834px){.mobile-break{display:block}.social-block{position:static;grid-column:1/-1;margin-top:22px}.social-caption{font-size:12px}.social-links{gap:19px;justify-content:flex-start}.social-links a{font-size:13px;gap:6px;min-height:44px}.social-links svg{width:18px;height:18px}}.social-block{bottom:26px}.social-links{gap:26px}.social-text{display:flex;flex-direction:column;line-height:1.5}.platform{font-size:12px;color:#95938d}.handle{font-size:13px;color:#e7e5df}.social-links a{gap:8px}@media(max-width:834px){.social-block{margin-top:12px}.social-links{gap:0;justify-content:space-between}.social-links a{gap:7px;min-height:44px}.social-links svg{width:17px;height:17px}.platform{font-size:12px}.handle{font-size:12px}}.social-block{width:355px;bottom:20px}.follow-label{font-size:12px;line-height:18px;margin:0 0 2px;color:#b8b3a8}.social-links{display:flex;gap:24px;align-items:center}.social-links a{gap:7px;min-height:44px;white-space:nowrap;color:#e0dcd3;font-size:13px;font-weight:400}.social-links svg{width:18px;height:18px}.account-name{font-size:13px;line-height:20px}.social-links a:hover{color:#f9df87}.social-links a:focus-visible{outline:1px solid #f9df87;outline-offset:3px}@media(max-width:834px){.social-block{width:100%;margin-top:10px}.social-links{justify-content:space-between;gap:12px}.social-links a{min-height:44px;gap:7px}.follow-label{font-size:12px;line-height:18px}.account-name{font-size:13px}.social-links svg{width:18px;height:18px}}
 .social-links a[aria-disabled="true"]{cursor:default}
-.shop-social .shop-action .button{min-height:44px}
 .email-note{font-size:13px;line-height:1.5;color:#c7c2b7;max-width:100%}
 .email-note strong{color:#f9df87;font-weight:600}
 .hero-signup .email-note{display:block}
@@ -347,36 +330,35 @@
 
 
 /* Approved official-color social links: equal emphasis, Whatnot first. */
-.shop-social .social-block{width:auto;max-width:calc(100% - var(--gutter)*2)}
-:is(.shop-social,.hero-community) .social-links{display:flex;gap:24px;align-items:center}
-:is(.shop-social,.hero-community) .social-links a{gap:10px;min-height:44px;color:#e0dcd3}
-:is(.shop-social,.hero-community) .social-icon{display:flex;align-items:center;justify-content:center;width:28px;height:24px;flex:none}
-:is(.shop-social,.hero-community) .social-icon img{display:block;width:24px;height:24px;object-fit:contain;max-width:none}
-:is(.shop-social,.hero-community) .social-icon-youtube img{width:42px;height:36px}
-:is(.shop-social,.hero-community) .social-links a:hover .account-name{text-decoration:underline;text-underline-offset:4px}
+.footer-community .social-block{width:auto;max-width:calc(100% - var(--gutter)*2)}
+:is(.footer-community,.hero-community) .social-links{display:flex;gap:24px;align-items:center}
+:is(.footer-community,.hero-community) .social-links a{gap:10px;min-height:44px;color:#e0dcd3}
+:is(.footer-community,.hero-community) .social-icon{display:flex;align-items:center;justify-content:center;width:28px;height:24px;flex:none}
+:is(.footer-community,.hero-community) .social-icon img{display:block;width:24px;height:24px;object-fit:contain;max-width:none}
+:is(.footer-community,.hero-community) .social-icon-youtube img{width:42px;height:36px}
+:is(.footer-community,.hero-community) .social-links a:hover .account-name{text-decoration:underline;text-underline-offset:4px}
 @media(min-width:835px) and (max-width:1100px){
- :is(.shop-social,.hero-community) .social-links{gap:16px}
- :is(.shop-social,.hero-community) .social-links a{gap:7px}
- :is(.shop-social,.hero-community) .social-icon{width:24px}
- :is(.shop-social,.hero-community) .social-icon img{width:22px;height:22px}
- :is(.shop-social,.hero-community) .social-icon-youtube img{width:38px;height:33px}
+ :is(.footer-community,.hero-community) .social-links{gap:16px}
+ :is(.footer-community,.hero-community) .social-links a{gap:7px}
+ :is(.footer-community,.hero-community) .social-icon{width:24px}
+ :is(.footer-community,.hero-community) .social-icon img{width:22px;height:22px}
+ :is(.footer-community,.hero-community) .social-icon-youtube img{width:38px;height:33px}
 }
 @media(max-width:834px){
- .shop-social .social-block{width:100%;max-width:none;margin-top:10px}
- :is(.shop-social,.hero-community) .social-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:20px;row-gap:0}
- :is(.shop-social,.hero-community) .social-links a{justify-self:start;gap:10px;min-height:44px}
- :is(.shop-social,.hero-community) .follow-label{margin-bottom:4px}
+ .footer-community .social-block{width:100%;max-width:none;margin-top:10px}
+ :is(.footer-community,.hero-community) .social-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:20px;row-gap:0}
+ :is(.footer-community,.hero-community) .social-links a{justify-self:start;gap:10px;min-height:44px}
+ :is(.footer-community,.hero-community) .follow-label{margin-bottom:4px}
 }
 
 /* Platform identification and searchable account names, approved two-line layout. */
-:is(.shop-social,.hero-community) .social-account{display:flex;flex-direction:column;gap:2px;line-height:1.4}
-:is(.shop-social,.hero-community) .social-platform{font-size:14px;line-height:20px;color:#f5f4ef;font-weight:400}
-:is(.shop-social,.hero-community) .account-name{font-size:12px;line-height:17px;color:#bdbab4;font-weight:400}
-:is(.shop-social,.hero-community) .follow-label{margin-bottom:6px}
+:is(.footer-community,.hero-community) .social-account{display:flex;flex-direction:column;gap:2px;line-height:1.4}
+:is(.footer-community,.hero-community) .social-platform{font-size:14px;line-height:20px;color:#f5f4ef;font-weight:400}
+:is(.footer-community,.hero-community) .account-name{font-size:12px;line-height:17px;color:#bdbab4;font-weight:400}
+:is(.footer-community,.hero-community) .follow-label{margin-bottom:6px}
 @media(min-width:835px) and (max-width:1100px){
- :is(.shop-social,.hero-community) .social-links{gap:12px}
- :is(.shop-social,.hero-community) .social-platform{font-size:13px}
- .shop-social .shop-art{top:35%}
+ :is(.footer-community,.hero-community) .social-links{gap:12px}
+ :is(.footer-community,.hero-community) .social-platform{font-size:13px}
 }
 
 /* Approved four-box lineup, 2026-10-09: desktop four columns, mobile two. */
@@ -471,3 +453,7 @@
  .hero-community{order:7;width:auto;max-width:none;margin:28px var(--gutter) 0}
  .hero-community .hero-social-list{column-gap:20px}
 }
+.footer-community{padding:24px var(--gutter)}
+.footer-community .social-block{position:static;width:auto;max-width:100%;margin:0}
+.footer-community .social-links{flex-wrap:wrap}
+@media(max-width:834px){.footer-community{padding:20px var(--gutter)}.footer-community .social-links{justify-content:flex-start;gap:12px 24px}}
